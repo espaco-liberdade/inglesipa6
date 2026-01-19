@@ -6,198 +6,145 @@
     <title>Aula 6: Negando e Perguntando no Presente Simples – Auxiliares "Do" e "Does"</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-        h1, h2, h3, h4 {
-            color: #2c3e50;
-        }
+        h1, h2, h3, h4 { color: #2c3e50; }
         h1 {
             text-align: center;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            color: #2980b9;
         }
-        .nav-menu {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+        h2 { border-left: 5px solid #3498db; padding-left: 10px; margin-top: 30px; }
+        
+        /* Navegação */
+        .nav-menu { text-align: center; margin: 20px 0; }
         .btn-menu {
             display: inline-block;
-            background-color: #2c3e50;
+            background-color: #34495e;
             color: #ffffff;
-            padding: 10px 20px;
+            padding: 10px 25px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 25px;
             font-weight: bold;
             transition: background 0.3s;
         }
-        .btn-menu:hover {
-            background-color: #34495e;
-        }
+        .btn-menu:hover { background-color: #2c3e50; transform: translateY(-2px); }
+
+        /* Caixas de Texto */
         .theme-intro {
             background-color: #eaf2f8;
             border-left: 5px solid #3498db;
-            padding: 15px;
-            margin-bottom: 20px;
+            padding: 20px;
             border-radius: 5px;
-        }
-        .theme-intro p strong {
-            color: #2980b9;
+            margin-bottom: 25px;
         }
         .nota-gramatical, .nota-dica, .secao-exercicios, .tarefa-extra, .secao-gabarito {
-            background-color: #ecf0f1;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
             border-left: 5px solid #f39c12;
-            padding: 15px;
-            margin: 20px 0;
+            padding: 20px;
+            margin: 25px 0;
             border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
-        .nota-dica {
-            border-left-color: #16a085;
-            background-color: #e8f6f3;
-        }
-        .tarefa-extra {
-             border-left-color: #8e44ad;
-             background-color: #f5eef8;
-        }
-        .secao-gabarito {
-            border-left-color: #2ecc71;
-            background-color: #f0fff4;
-        }
-        .nota-gramatical h4, .nota-dica h4, .secao-exercicios h4, .tarefa-extra h4, .secao-gabarito h4 {
-            margin-top: 0;
-            color: #c0392b;
-        }
-        .tarefa-extra h4 {
-            color: #8e44ad;
-        }
-        .secao-gabarito h4 {
-            color: #2ecc71;
-        }
-        .table-responsive-wrapper {
-            overflow-x: auto;
-            margin: 20px 0;
-        }
+        .nota-dica { border-left-color: #16a085; background-color: #e8f8f5; }
+        .tarefa-extra { border-left-color: #8e44ad; background-color: #fbf6fd; }
+        .secao-gabarito { border-left-color: #2ecc71; background-color: #f0fff4; }
+
+        /* Tabelas */
+        .table-responsive-wrapper { overflow-x: auto; margin: 20px 0; }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
-            font-size: 0.9em;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+            background-color: #fff;
         }
         th, td {
-            border: 1px solid #bdc3c7;
-            padding: 10px;
+            border: 1px solid #dcdcdc;
+            padding: 12px;
             text-align: left;
-            vertical-align: top; 
+            vertical-align: top;
         }
-        th {
-            background-color: #34495e;
-            color: #fff;
-            font-weight: bold;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        code, .ipa-symbol {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #e0e0e0;
+        th { background-color: #34495e; color: #fff; }
+        tr:nth-child(even) { background-color: #f8f9fa; }
+
+        /* Estilos de Texto e IPA */
+        code {
+            font-family: 'Consolas', 'Courier New', monospace;
+            background-color: #eee;
             padding: 2px 5px;
             border-radius: 3px;
-            color: #c0392b; 
-            white-space: nowrap;
+            color: #c0392b;
+            display: inline-block;
+            margin: 2px 0;
         }
-        .ipa-phrase-block {
-            display: block;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-        .ipa-phrase-block code {
-             background-color: #f0f0f0;
-             padding: 3px 6px;
-        }
+        .ipa-phrase-block { display: block; margin-top: 5px; }
         .character-portuguese-phonetics {
             font-style: italic;
-            color: #27ae60; 
+            color: #27ae60;
             display: block;
-            margin-top: 4px;
-            font-size: 0.9em;
+            margin-top: 2px;
+            font-weight: 500;
         }
+        .translation-line {
+            display: block;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 4px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 2px;
+        }
+        
+        /* Botões de Áudio */
         .audio-link {
-            text-decoration: none;
-            font-size: 1.2em;
-            color: #3498db;
             cursor: pointer;
             border: none;
             background: none;
-            padding: 0;
+            font-size: 1.3em;
+            color: #3498db;
+            vertical-align: middle;
+            transition: transform 0.2s;
         }
-        .audio-link:hover {
-            color: #2980b9;
-        }
-        .audio-link-in-cell {
-            display: block;
-            margin-top: 5px;
-            font-size: 0.9em;
-            text-align: left;
-        }
-        .example-word {
-            font-weight: bold;
-            color: #2980b9;
-        }
-        .exercise-list {
-            list-style-type: decimal;
-            padding-left: 20px;
-        }
-        .exercise-list li {
-            margin-bottom: 10px;
-        }
+        .audio-link:hover { transform: scale(1.2); color: #2980b9; }
+        
+        .example-word { font-weight: bold; color: #2980b9; }
         .fill-in-blank {
             display: inline-block;
-            width: 100px;
-            border-bottom: 1px solid #333;
-            margin: 0 5px;
+            width: 120px;
+            border-bottom: 2px solid #7f8c8d;
             text-align: center;
-            color: #3498db;
+            color: #2980b9;
+            font-weight: bold;
         }
-        ul.no-bullets {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ul.no-bullets li {
-            margin-bottom: 5px;
-        }
-        .hidden-answer {
-            font-size: 0.7em;
-            color: #fff;
-            background-color: #333;
-            padding: 1px 4px;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .hidden-answer:hover {
-            color: #333;
-            background-color: #f4f4f4;
-        }
+        
+        /* Listas */
+        ul.no-bullets { list-style-type: none; padding: 0; }
+        ul.no-bullets li { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+        .quiz-options { list-style-type: none; padding-left: 0; }
+        .quiz-options li { margin-bottom: 10px; padding: 5px; background: #fff; border-radius: 4px; }
+        .exercise-list { list-style-type: decimal; padding-left: 20px; }
+        .exercise-list li { margin-bottom: 15px; }
 
         @media (max-width: 768px) {
-            body { padding: 10px; }
             .container { padding: 15px; }
-            h1 { font-size: 1.8em; }
-            h2 { font-size: 1.5em; }
-            table { font-size: 0.8em; }
+            table { font-size: 0.85em; }
+            th, td { padding: 8px; }
         }
     </style>
 </head>
@@ -218,15 +165,15 @@
         <h2>6. Os Auxiliares Mágicos: "Do" e "Does"</h2>
         <section id="auxiliares-do-does">
             <h3>6.1 Os Ajudantes "Do" e "Does": Essenciais para Negativas e Interrogativas</h3>
-            <p>No Presente Simples, para a maioria dos verbos (exceto o verbo "To Be" e os verbos modais, que veremos depois), precisamos de "ajudantes" para formar frases negativas e interrogativas. Esses ajudantes são os verbos auxiliares <strong>DO</strong> e <strong>DOES</strong>.</p>
+            <p>No Presente Simples, para a maioria dos verbos (exceto o verbo "To Be" e os verbos modais), precisamos de "ajudantes" para formar frases negativas e interrogativas. Esses ajudantes são os verbos auxiliares <strong>DO</strong> e <strong>DOES</strong>.</p>
             <ul>
                 <li>Usamos <strong>DO</strong> com os sujeitos: <strong>I, You, We, They</strong>.
-                    <br>Ex: I <span class="example-word">do</span> not like coffee. (Eu não gosto de café.)<br>
-                    <button onclick="playAudio('I do not like coffee')" class="audio-link audio-link-in-cell">🔊</button>
+                    <br>Ex: I <span class="example-word">do</span> not like coffee. <button onclick="playAudio('I do not like coffee')" class="audio-link">🔊</button>
+                    <br>Tradução: <strong>Eu não gosto de café.</strong>
                 </li>
                 <li>Usamos <strong>DOES</strong> com os sujeitos da terceira pessoa do singular: <strong>He, She, It</strong>.
-                    <br>Ex: She <span class="example-word">does</span> not eat meat. (Ela não come carne.)<br>
-                    <button onclick="playAudio('She does not eat meat')" class="audio-link audio-link-in-cell">🔊</button>
+                    <br>Ex: She <span class="example-word">does</span> not eat meat. <button onclick="playAudio('She does not eat meat')" class="audio-link">🔊</button>
+                    <br>Tradução: <strong>Ela não come carne.</strong>
                 </li>
             </ul>
             <p>Uma regra MUITO importante: quando usamos "do" ou "does" (em perguntas ou negativas), o verbo principal da frase volta para a sua <strong>forma base</strong> (infinitivo sem "to"). Ou seja, ele não leva mais "-s", "-es" ou "-ies" na terceira pessoa do singular!</p>
@@ -246,7 +193,6 @@
             <ul>
                 <li><strong>do not</strong> → <strong>don't</strong> (<code>/doʊnt/</code> - DÔUNT)</li>
                 <li><strong>does not</strong> → <strong>doesn't</strong> (<code>/ˈdʌznt/</code> - DÂ-zãnt)</li>
-                <li><em>Atenção:</em> "am not" não tem uma contração comum e amplamente aceita como "amn't". Usamos "I'm not".</li>
             </ul>
 
             <h4>Frases Negativas com "Don't" e "Doesn't" (Tema: Alimentação)</h4>
@@ -254,32 +200,31 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Frase em Inglês (Contração)</th>
-                            <th>Pronúncia (IPA / Simplificada)</th>
-                            <th>Tradução</th>
+                            <th style="width: 50%;">Frase em Inglês (Contração)</th>
+                            <th style="width: 50%;">Tradução, IPA & Simplificada</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>I <span class="example-word">don't eat</span> meat.<br><button onclick="playAudio('I don\'t eat meat')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/aɪ doʊnt iːt miːt/</code><br><span class="character-portuguese-phonetics">(ÁI DÔUNT ÍIT MÍIT)</span></td><td>Eu não como carne.</td></tr>
-                        <tr><td>You <span class="example-word">don't like</span> spicy food.<br><button onclick="playAudio('You don\'t like spicy food')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/juː doʊnt laɪk ˈspaɪsi fuːd/</code><br><span class="character-portuguese-phonetics">(IÚU DÔUNT LÁIK SPÁI-si FÚUD)</span></td><td>Você não gosta de comida apimentada.</td></tr>
-                        <tr><td>He <span class="example-word">doesn't drink</span> coffee in the morning.<br><button onclick="playAudio('He doesn\'t drink coffee in the morning')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/hiː ˈdʌznt drɪŋk ˈkɔːfi ɪn ðə ˈmɔːrnɪŋ/</code><br><span class="character-portuguese-phonetics">(RÍI DÂ-zãnt DRÊNK CÓ-fi în dhã MÓR-nin)</span></td><td>Ele não bebe café de manhã.</td></tr>
-                        <tr><td>She <span class="example-word">doesn't cook</span> dinner every night.<br><button onclick="playAudio('She doesn\'t cook dinner every night')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/ʃiː ˈdʌznt kʊk ˈdɪnər ˈevri naɪt/</code><br><span class="character-portuguese-phonetics">(XÍI DÂ-zãnt CÚK DÊ-nãr É-vri NÁIT)</span></td><td>Ela não cozinha o jantar todas as noites.</td></tr>
-                        <tr><td>It (the restaurant) <span class="example-word">doesn't open</span> on Sundays.<br><button onclick="playAudio('It doesn\'t open on Sundays')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/ɪt ˈdʌznt ˈoʊpən ɑːn ˈsʌndeɪz/</code><br><span class="character-portuguese-phonetics">(ÊT DÂ-zãnt ÔU-pãn ón SÂN-deiz)</span></td><td>Ele (o restaurante) não abre aos domingos.</td></tr>
-                        <tr><td>We <span class="example-word">don't have</span> a big lunch during the week.<br><button onclick="playAudio('We don\'t have a big lunch during the week')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/wiː doʊnt hæv ə bɪɡ lʌntʃ ˈdʊrɪŋ ðə wiːk/</code><br><span class="character-portuguese-phonetics">(UÍI DÔUNT RÉV ã BÊG LÂNTCH DÚ-rin dhã UÍIK)</span></td><td>Nós não temos um almoço grande durante a semana.</td></tr>
-                        <tr><td>They <span class="example-word">don't prefer</span> tea; they prefer coffee.<br><button onclick="playAudio('They don\'t prefer tea; they prefer coffee')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/ðeɪ doʊnt prɪˈfɜːr tiː ðeɪ prɪˈfɜːr ˈkɔːfi/</code><br><span class="character-portuguese-phonetics">(DHÊI DÔUNT pri-FÃR TÍI; dhêi pri-FÃR CÓ-fi)</span></td><td>Eles não preferem chá; eles preferem café.</td></tr>
-                        <tr><td>I <span class="example-word">don't usually eat</span> dessert.<br><button onclick="playAudio('I don\'t usually eat dessert')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/aɪ doʊnt ˈjuːʒuəli iːt dɪˈzɜːrt/</code><br><span class="character-portuguese-phonetics">(ÁI DÔUNT IÚU-jua-li ÍIT di-ZÃRT)</span></td><td>Eu geralmente não como sobremesa.</td></tr>
-                        <tr><td>You <span class="example-word">don't drink</span> soda.<br><button onclick="playAudio('You don\'t drink soda')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/juː doʊnt drɪŋk ˈsoʊdə/</code><br><span class="character-portuguese-phonetics">(IÚU DÔUNT DRÊNK SÔU-dã)</span></td><td>Você não bebe refrigerante.</td></tr>
-                        <tr><td>He <span class="example-word">doesn't like</span> fish very much.<br><button onclick="playAudio('He doesn\'t like fish very much')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/hiː ˈdʌznt laɪk fɪʃ ˈveri mʌtʃ/</code><br><span class="character-portuguese-phonetics">(RÍI DÂ-zãnt LÁIK FÊSH VÉ-ri MÂTCH)</span></td><td>Ele não gosta muito de peixe.</td></tr>
-                        <tr><td>She <span class="example-word">doesn't want</span> any sugar in her tea.<br><button onclick="playAudio('She doesn\'t want any sugar in her tea')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/ʃiː ˈdʌznt wɑːnt ˈeni ˈʃʊɡər ɪn hər tiː/</code><br><span class="character-portuguese-phonetics">(XÍI DÂ-zãnt UÓNT É-ni XÚ-gãr în rãr TÍI)</span></td><td>Ela não quer açúcar no chá dela.</td></tr>
-                        <tr><td>We <span class="example-word">don't order</span> fast food often.<br><button onclick="playAudio('We don\'t order fast food often')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/wiː doʊnt ˈɔːrdər fæst fuːd ˈɔːfn/</code><br><span class="character-portuguese-phonetics">(UÍI DÔUNT ÓR-dãr FÉST FÚUD Ó-fãn)</span></td><td>Nós não pedimos fast food com frequência.</td></tr>
-                        <tr><td>They <span class="example-word">don't eat</span> breakfast at 6 AM.<br><button onclick="playAudio('They don\'t eat breakfast at 6 AM')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/ðeɪ doʊnt iːt ˈbrekfəst æt sɪks eɪ em/</code><br><span class="character-portuguese-phonetics">(DHÊI DÔUNT ÍIT BRÉK-fãst ét SÊKS ÊI-ÉM)</span></td><td>Eles não tomam café da manhã às 6h.</td></tr>
-                        <tr><td>I <span class="example-word">don't cook</span> with a lot of salt.<br><button onclick="playAudio('I don\'t cook with a lot of salt')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/aɪ doʊnt kʊk wɪð ə lɑːt əv sɔːlt/</code><br><span class="character-portuguese-phonetics">(ÁI DÔUNT CÚK uêDH ã LÓT óv SÓLT)</span></td><td>Eu não cozinho com muito sal.</td></tr>
-                        <tr><td>He <span class="example-word">doesn't like</span> to try exotic food.<br><button onclick="playAudio('He doesn\'t like to try exotic food')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/hiː ˈdʌznt laɪk tə traɪ ɪɡˈzɑːtɪk fuːd/</code><br><span class="character-portuguese-phonetics">(RÍI DÂ-zãnt LÁIK tã TRÁI eg-ZÓ-têk FÚUD)</span></td><td>Ele não gosta de experimentar comida exótica.</td></tr>
-                        <tr><td>She <span class="example-word">doesn't eat</span> late at night.<br><button onclick="playAudio('She doesn\'t eat late at night')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/ʃiː ˈdʌznt iːt leɪt æt naɪt/</code><br><span class="character-portuguese-phonetics">(XÍI DÂ-zãnt ÍIT LÊIT ét NÁIT)</span></td><td>Ela não come tarde da noite.</td></tr>
-                        <tr><td>We <span class="example-word">don't always have</span> time for lunch.<br><button onclick="playAudio('We don\'t always have time for lunch')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/wiː doʊnt ˈɔːlweɪz hæv taɪm fər lʌntʃ/</code><br><span class="character-portuguese-phonetics">(UÍI DÔUNT ÓL-ueiz RÉV TÁIM fór LÂNTCH)</span></td><td>Nós nem sempre temos tempo para o almoço.</td></tr>
-                        <tr><td>They <span class="example-word">don't drink</span> much juice.<br><button onclick="playAudio('They don\'t drink much juice')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/ðeɪ doʊnt drɪŋk mʌtʃ dʒuːs/</code><br><span class="character-portuguese-phonetics">(DHÊI DÔUNT DRÊNK MÂTCH DJÚUS)</span></td><td>Eles não bebem muito suco.</td></tr>
-                        <tr><td>I <span class="example-word">don't like</span> onions in my salad.<br><button onclick="playAudio('I don\'t like onions in my salad')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/aɪ doʊnt laɪk ˈʌnjənz ɪn maɪ ˈsæləd/</code><br><span class="character-portuguese-phonetics">(ÁI DÔUNT LÁIK Â-niãnz în mái SÉ-lãd)</span></td><td>Eu não gosto de cebola na minha salada.</td></tr>
-                        <tr><td>You <span class="example-word">don't need</span> to add more sugar.<br><button onclick="playAudio('You don\'t need to add more sugar')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/juː doʊnt niːd tu æd mɔːr ˈʃʊɡər/</code><br><span class="character-portuguese-phonetics">(IÚU DÔUNT NÍID tu ÉD MÓR XÚ-gãr)</span></td><td>Você não precisa adicionar mais açúcar.</td></tr>
+                        <tr><td>I <span class="example-word">don't eat</span> meat. <button onclick="playAudio('I don\'t eat meat')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu não como carne.</span><code>/aɪ doʊnt iːt miːt/</code><br><span class="character-portuguese-phonetics">(ÁI DÔUNT ÍIT MÍIT)</span></td></tr>
+                        <tr><td>You <span class="example-word">don't like</span> spicy food. <button onclick="playAudio('You don\'t like spicy food')" class="audio-link">🔊</button></td><td><span class="translation-line">Você não gosta de comida apimentada.</span><code>/juː doʊnt laɪk ˈspaɪsi fuːd/</code><br><span class="character-portuguese-phonetics">(IÚU DÔUNT LÁIK SPÁI-si FÚUD)</span></td></tr>
+                        <tr><td>He <span class="example-word">doesn't drink</span> coffee in the morning. <button onclick="playAudio('He doesn\'t drink coffee in the morning')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele não bebe café de manhã.</span><code>/hiː ˈdʌznt drɪŋk ˈkɔːfi ɪn ðə ˈmɔːrnɪŋ/</code><br><span class="character-portuguese-phonetics">(RÍI DÂ-zãnt DRÊNK CÓ-fi în dhã MÓR-nin)</span></td></tr>
+                        <tr><td>She <span class="example-word">doesn't cook</span> dinner every night. <button onclick="playAudio('She doesn\'t cook dinner every night')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela não cozinha o jantar todas as noites.</span><code>/ʃiː ˈdʌznt kʊk ˈdɪnər ˈevri naɪt/</code><br><span class="character-portuguese-phonetics">(XÍI DÂ-zãnt CÚK DÊ-nãr É-vri NÁIT)</span></td></tr>
+                        <tr><td>It (the restaurant) <span class="example-word">doesn't open</span> on Sundays. <button onclick="playAudio('It doesn\'t open on Sundays')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele (o restaurante) não abre aos domingos.</span><code>/ɪt ˈdʌznt ˈoʊpən ɑːn ˈsʌndeɪz/</code><br><span class="character-portuguese-phonetics">(ÊT DÂ-zãnt ÔU-pãn ón SÂN-deiz)</span></td></tr>
+                        <tr><td>We <span class="example-word">don't have</span> a big lunch during the week. <button onclick="playAudio('We don\'t have a big lunch during the week')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós não temos um almoço grande durante a semana.</span><code>/wiː doʊnt hæv ə bɪɡ lʌntʃ ˈdʊrɪŋ ðə wiːk/</code><br><span class="character-portuguese-phonetics">(UÍI DÔUNT RÉV ã BÊG LÂNTCH DÚ-rin dhã UÍIK)</span></td></tr>
+                        <tr><td>They <span class="example-word">don't prefer</span> tea; they prefer coffee. <button onclick="playAudio('They don\'t prefer tea; they prefer coffee')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles não preferem chá; eles preferem café.</span><code>/ðeɪ doʊnt prɪˈfɜːr tiː ðeɪ prɪˈfɜːr ˈkɔːfi/</code><br><span class="character-portuguese-phonetics">(DHÊI DÔUNT pri-FÃR TÍI; dhêi pri-FÃR CÓ-fi)</span></td></tr>
+                        <tr><td>I <span class="example-word">don't usually eat</span> dessert. <button onclick="playAudio('I don\'t usually eat dessert')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu geralmente não como sobremesa.</span><code>/aɪ doʊnt ˈjuːʒuəli iːt dɪˈzɜːrt/</code><br><span class="character-portuguese-phonetics">(ÁI DÔUNT IÚU-jua-li ÍIT di-ZÃRT)</span></td></tr>
+                        <tr><td>You <span class="example-word">don't drink</span> soda. <button onclick="playAudio('You don\'t drink soda')" class="audio-link">🔊</button></td><td><span class="translation-line">Você não bebe refrigerante.</span><code>/juː doʊnt drɪŋk ˈsoʊdə/</code><br><span class="character-portuguese-phonetics">(IÚU DÔUNT DRÊNK SÔU-dã)</span></td></tr>
+                        <tr><td>He <span class="example-word">doesn't like</span> fish very much. <button onclick="playAudio('He doesn\'t like fish very much')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele não gosta muito de peixe.</span><code>/hiː ˈdʌznt laɪk fɪʃ ˈveri mʌtʃ/</code><br><span class="character-portuguese-phonetics">(RÍI DÂ-zãnt LÁIK FÊSH VÉ-ri MÂTCH)</span></td></tr>
+                        <tr><td>She <span class="example-word">doesn't want</span> any sugar in her tea. <button onclick="playAudio('She doesn\'t want any sugar in her tea')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela não quer açúcar no chá dela.</span><code>/ʃiː ˈdʌznt wɑːnt ˈeni ˈʃʊɡər ɪn hər tiː/</code><br><span class="character-portuguese-phonetics">(XÍI DÂ-zãnt UÓNT É-ni XÚ-gãr în rãr TÍI)</span></td></tr>
+                        <tr><td>We <span class="example-word">don't order</span> fast food often. <button onclick="playAudio('We don\'t order fast food often')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós não pedimos fast food com frequência.</span><code>/wiː doʊnt ˈɔːrdər fæst fuːd ˈɔːfn/</code><br><span class="character-portuguese-phonetics">(UÍI DÔUNT ÓR-dãr FÉST FÚUD Ó-fãn)</span></td></tr>
+                        <tr><td>They <span class="example-word">don't eat</span> breakfast at 6 AM. <button onclick="playAudio('They don\'t eat breakfast at 6 AM')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles não tomam café da manhã às 6h.</span><code>/ðeɪ doʊnt iːt ˈbrekfəst æt sɪks eɪ em/</code><br><span class="character-portuguese-phonetics">(DHÊI DÔUNT ÍIT BRÉK-fãst ét SÊKS ÊI-ÉM)</span></td></tr>
+                        <tr><td>I <span class="example-word">don't cook</span> with a lot of salt. <button onclick="playAudio('I don\'t cook with a lot of salt')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu não cozinho com muito sal.</span><code>/aɪ doʊnt kʊk wɪð ə lɑːt əv sɔːlt/</code><br><span class="character-portuguese-phonetics">(ÁI DÔUNT CÚK uêDH ã LÓT óv SÓLT)</span></td></tr>
+                        <tr><td>He <span class="example-word">doesn't like</span> to try exotic food. <button onclick="playAudio('He doesn\'t like to try exotic food')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele não gosta de experimentar comida exótica.</span><code>/hiː ˈdʌznt laɪk tə traɪ ɪɡˈzɑːtɪk fuːd/</code><br><span class="character-portuguese-phonetics">(RÍI DÂ-zãnt LÁIK tã TRÁI eg-ZÓ-têk FÚUD)</span></td></tr>
+                        <tr><td>She <span class="example-word">doesn't eat</span> late at night. <button onclick="playAudio('She doesn\'t eat late at night')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela não come tarde da noite.</span><code>/ʃiː ˈdʌznt iːt leɪt æt naɪt/</code><br><span class="character-portuguese-phonetics">(XÍI DÂ-zãnt ÍIT LÊIT ét NÁIT)</span></td></tr>
+                        <tr><td>We <span class="example-word">don't always have</span> time for lunch. <button onclick="playAudio('We don\'t always have time for lunch')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós nem sempre temos tempo para o almoço.</span><code>/wiː doʊnt ˈɔːlweɪz hæv taɪm fər lʌntʃ/</code><br><span class="character-portuguese-phonetics">(UÍI DÔUNT ÓL-ueiz RÉV TÁIM fór LÂNTCH)</span></td></tr>
+                        <tr><td>They <span class="example-word">don't drink</span> much juice. <button onclick="playAudio('They don\'t drink much juice')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles não bebem muito suco.</span><code>/ðeɪ doʊnt drɪŋk mʌtʃ dʒuːs/</code><br><span class="character-portuguese-phonetics">(DHÊI DÔUNT DRÊNK MÂTCH DJÚUS)</span></td></tr>
+                        <tr><td>I <span class="example-word">don't like</span> onions in my salad. <button onclick="playAudio('I don\'t like onions in my salad')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu não gosto de cebola na minha salada.</span><code>/aɪ doʊnt laɪk ˈʌnjənz ɪn maɪ ˈsæləd/</code><br><span class="character-portuguese-phonetics">(ÁI DÔUNT LÁIK Â-niãnz în mái SÉ-lãd)</span></td></tr>
+                        <tr><td>You <span class="example-word">don't need</span> to add more sugar. <button onclick="playAudio('You don\'t need to add more sugar')" class="audio-link">🔊</button></td><td><span class="translation-line">Você não precisa adicionar mais açúcar.</span><code>/juː doʊnt niːd tu æd mɔːr ˈʃʊɡər/</code><br><span class="character-portuguese-phonetics">(IÚU DÔUNT NÍID tu ÉD MÓR XÚ-gãr)</span></td></tr>
                     </tbody>
                 </table>
             </div>
@@ -287,41 +232,39 @@
 
         <section id="simple-present-interrogativa">
             <h3>6.3 Fazendo Perguntas Sobre Rotinas: "Do you drink coffee?", "Does she like fish?"</h3>
-            <p>Para formar perguntas no Presente Simples (que podem ser respondidas com "sim" ou "não"), usamos a seguinte estrutura:</p>
+            <p>Para formar perguntas no Presente Simples, usamos a seguinte estrutura:</p>
             <p><strong>DO/DOES + Sujeito + Verbo (forma base) + Complemento?</strong></p>
-            <p>Lembre-se: o verbo principal fica na forma base!</p>
 
             <h4>Frases Interrogativas com "Do" e "Does" (Tema: Alimentação)</h4>
             <div class="table-responsive-wrapper">
                 <table>
                     <thead>
                         <tr>
-                            <th>Frase em Inglês</th>
-                            <th>Pronúncia (IPA / Simplificada)</th>
-                            <th>Tradução</th>
+                            <th style="width: 50%;">Frase em Inglês</th>
+                            <th style="width: 50%;">Tradução, IPA & Simplificada</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><span class="example-word">Do</span> I <span class="example-word">need</span> to buy milk?<br><button onclick="playAudio('Do I need to buy milk?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː aɪ niːd tə baɪ mɪlk/</code><br><span class="character-portuguese-phonetics">(DÚU ÁI NÍID tã BÁI MÊLK?)</span></td><td>Eu preciso comprar leite?</td></tr>
-                        <tr><td><span class="example-word">Do</span> you <span class="example-word">like</span> black coffee?<br><button onclick="playAudio('Do you like black coffee?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː juː laɪk blæk ˈkɔːfi/</code><br><span class="character-portuguese-phonetics">(DÚU IÚU LÁIK BLÉK CÓ-fi?)</span></td><td>Você gosta de café preto (puro)?</td></tr>
-                        <tr><td><span class="example-word">Does</span> he <span class="example-word">eat</span> rice and beans for lunch?<br><button onclick="playAudio('Does he eat rice and beans for lunch?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/dʌz hiː iːt raɪs ænd biːnz fər lʌntʃ/</code><br><span class="character-portuguese-phonetics">(DÂZ RÍI ÍIT RÁIS énd BÍINZ fór LÂNTCH?)</span></td><td>Ele come arroz e feijão no almoço?</td></tr>
-                        <tr><td><span class="example-word">Does</span> she <span class="example-word">prefer</span> tea or juice?<br><button onclick="playAudio('Does she prefer tea or juice?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/dʌz ʃiː prɪˈfɜːr tiː ɔːr dʒuːs/</code><br><span class="character-portuguese-phonetics">(DÂZ XÍI pri-FÃR TÍI ór DJÚUS?)</span></td><td>Ela prefere chá ou suco?</td></tr>
-                        <tr><td><span class="example-word">Does</span> it (the restaurant) <span class="example-word">serve</span> vegetarian options?<br><button onclick="playAudio('Does it serve vegetarian options?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/dʌz ɪt sɜːrv ˌvedʒəˈteriən ˈɑːpʃnz/</code><br><span class="character-portuguese-phonetics">(DÂZ ÊT SÃRV vé-djã-TÉ-ri-ãn ÓP-shãnz?)</span></td><td>Ele (o restaurante) serve opções vegetarianas?</td></tr>
-                        <tr><td><span class="example-word">Do</span> we <span class="example-word">have</span> dinner together on Fridays?<br><button onclick="playAudio('Do we have dinner together on Fridays?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː wiː hæv ˈdɪnər təˈɡeðər ɑːn ˈfraɪdeɪz/</code><br><span class="character-portuguese-phonetics">(DÚU UÍI RÉV DÊ-nãr tã-GUÉ-dhãr ón FRÁI-deiz?)</span></td><td>Nós jantamos juntos às sextas-feiras?</td></tr>
-                        <tr><td><span class="example-word">Do</span> they <span class="example-word">cook</span> at home or eat out?<br><button onclick="playAudio('Do they cook at home or eat out?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː ðeɪ kʊk æt hoʊm ɔːr iːt aʊt/</code><br><span class="character-portuguese-phonetics">(DÚU DHÊI CÚK ét RÔUM ór ÍIT ÁUT?)</span></td><td>Eles cozinham em casa ou comem fora?</td></tr>
-                        <tr><td><span class="example-word">Do</span> I <span class="example-word">add</span> too much pepper?<br><button onclick="playAudio('Do I add too much pepper?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː aɪ æd tuː mʌtʃ ˈpepər/</code><br><span class="character-portuguese-phonetics">(DÚU ÁI ÉD TÚU MÂTCH PÉ-pãr?)</span></td><td>Eu coloco pimenta demais?</td></tr>
-                        <tr><td><span class="example-word">Do</span> you <span class="example-word">drink</span> water with your meals?<br><button onclick="playAudio('Do you drink water with your meals?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː juː drɪŋk ˈwɔːtər wɪð jɔːr miːlz/</code><br><span class="character-portuguese-phonetics">(DÚU IÚU DRÊNK UÓ-tãr uêDH iór MÍILZ?)</span></td><td>Você bebe água com suas refeições?</td></tr>
-                        <tr><td><span class="example-word">Does</span> he <span class="example-word">like</span> to eat fruit for breakfast?<br><button onclick="playAudio('Does he like to eat fruit for breakfast?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/dʌz hiː laɪk tu iːt fruːt fər ˈbrekfəst/</code><br><span class="character-portuguese-phonetics">(DÂZ RÍI LÁIK tu ÍIT FRÚUT fór BRÉK-fãst?)</span></td><td>Ele gosta de comer fruta no café da manhã?</td></tr>
-                        <tr><td><span class="example-word">Does</span> she <span class="example-word">order</span> food from this app?<br><button onclick="playAudio('Does she order food from this app?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/dʌz ʃiː ˈɔːrdər fuːd frəm ðɪs æp/</code><br><span class="character-portuguese-phonetics">(DÂZ XÍI ÓR-dãr FÚUD frãm DHÊS ÉP?)</span></td><td>Ela pede comida deste aplicativo?</td></tr>
-                        <tr><td><span class="example-word">Do</span> we <span class="example-word">need</span> more bread for dinner?<br><button onclick="playAudio('Do we need more bread for dinner?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː wiː niːd mɔːr bred fər ˈdɪnər/</code><br><span class="character-portuguese-phonetics">(DÚU UÍI NÍID MÓR BRÉD fór DÊ-nãr?)</span></td><td>Nós precisamos de mais pão para o jantar?</td></tr>
-                        <tr><td><span class="example-word">Do</span> they <span class="example-word">usually eat</span> salad with lunch?<br><button onclick="playAudio('Do they usually eat salad with lunch?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː ðeɪ ˈjuːʒuəli iːt ˈsæləd wɪð lʌntʃ/</code><br><span class="character-portuguese-phonetics">(DÚU DHÊI IÚU-jua-li ÍIT SÉ-lãd uêDH LÂNTCH?)</span></td><td>Eles geralmente comem salada com o almoço?</td></tr>
-                        <tr><td><span class="example-word">Do</span> you <span class="example-word">want</span> some cake for dessert?<br><button onclick="playAudio('Do you want some cake for dessert?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː juː wɑːnt sʌm keɪk fər dɪˈzɜːrt/</code><br><span class="character-portuguese-phonetics">(DÚU IÚU UÓNT sãm KÊIK fór di-ZÃRT?)</span></td><td>Você quer bolo de sobremesa?</td></tr>
-                        <tr><td><span class="example-word">Does</span> he <span class="example-word">prefer</span> chicken or fish?<br><button onclick="playAudio('Does he prefer chicken or fish?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/dʌz hiː prɪˈfɜːr ˈtʃɪkɪn ɔːr fɪʃ/</code><br><span class="character-portuguese-phonetics">(DÂZ RÍI pri-FÃR TCHÊ-kãn ór FÊSH?)</span></td><td>Ele prefere frango ou peixe?</td></tr>
-                        <tr><td><span class="example-word">Does</span> she <span class="example-word">cook</span> with fresh ingredients?<br><button onclick="playAudio('Does she cook with fresh ingredients?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/dʌz ʃiː kʊk wɪð freʃ ɪnˈɡriːdiənts/</code><br><span class="character-portuguese-phonetics">(DÂZ XÍI CÚK uêDH FRÉSH în-GRÍI-di-ãnts?)</span></td><td>Ela cozinha com ingredientes frescos?</td></tr>
-                        <tr><td><span class="example-word">Do</span> we <span class="example-word">have</span> any snacks in the kitchen?<br><button onclick="playAudio('Do we have any snacks in the kitchen?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː wiː hæv ˈeni snæks ɪn ðə ˈkɪtʃɪn/</code><br><span class="character-portuguese-phonetics">(DÚU UÍI RÉV É-ni SNÉKS în dhã KÊ-tchãn?)</span></td><td>Nós temos algum lanche na cozinha?</td></tr>
-                        <tr><td><span class="example-word">Do</span> they <span class="example-word">like</span> to go to expensive restaurants?<br><button onclick="playAudio('Do they like to go to expensive restaurants?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː ðeɪ laɪk tu ɪkˈspensɪv ˈrestrɑːnts/</code><br><span class="character-portuguese-phonetics">(DÚU DHÊI LÁIK tã GÔU tu ek-SPÉN-sêv RÉStronts?)</span></td><td>Eles gostam de ir a restaurantes caros?</td></tr>
-                        <tr><td><span class="example-word">Do</span> I <span class="example-word">eat</span> too much fast food?<br><button onclick="playAudio('Do I eat too much fast food?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː aɪ iːt tuː mʌtʃ fæst fuːd/</code><br><span class="character-portuguese-phonetics">(DÚU ÁI ÍIT TÚU MÂTCH FÉST FÚUD?)</span></td><td>Eu como muito fast food?</td></tr>
-                        <tr><td><span class="example-word">Do</span> you <span class="example-word">know</span> a good recipe for pasta?<br><button onclick="playAudio('Do you know a good recipe for pasta?')" class="audio-link audio-link-in-cell">🔊</button></td><td><code>/duː juː noʊ ə ɡʊd ˈresəpi fər ˈpɑːstə/</code><br><span class="character-portuguese-phonetics">(DÚU IÚU NÔU ã GÚD RÉ-sã-pi fór PÁS-tã?)</span></td><td>Você conhece uma boa receita de macarrão?</td></tr>
+                        <tr><td><span class="example-word">Do</span> I <span class="example-word">need</span> to buy milk? <button onclick="playAudio('Do I need to buy milk?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu preciso comprar leite?</span><code>/duː aɪ niːd tə baɪ mɪlk/</code><br><span class="character-portuguese-phonetics">(DÚU ÁI NÍID tã BÁI MÊLK?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> you <span class="example-word">like</span> black coffee? <button onclick="playAudio('Do you like black coffee?')" class="audio-link">🔊</button></td><td><span class="translation-line">Você gosta de café preto?</span><code>/duː juː laɪk blæk ˈkɔːfi/</code><br><span class="character-portuguese-phonetics">(DÚU IÚU LÁIK BLÉK CÓ-fi?)</span></td></tr>
+                        <tr><td><span class="example-word">Does</span> he <span class="example-word">eat</span> rice and beans for lunch? <button onclick="playAudio('Does he eat rice and beans for lunch?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele come arroz e feijão no almoço?</span><code>/dʌz hiː iːt raɪs ænd biːnz fər lʌntʃ/</code><br><span class="character-portuguese-phonetics">(DÂZ RÍI ÍIT RÁIS énd BÍINZ fór LÂNTCH?)</span></td></tr>
+                        <tr><td><span class="example-word">Does</span> she <span class="example-word">prefer</span> tea or juice? <button onclick="playAudio('Does she prefer tea or juice?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela prefere chá ou suco?</span><code>/dʌz ʃiː prɪˈfɜːr tiː ɔːr dʒuːs/</code><br><span class="character-portuguese-phonetics">(DÂZ XÍI pri-FÃR TÍI ór DJÚUS?)</span></td></tr>
+                        <tr><td><span class="example-word">Does</span> it (the restaurant) <span class="example-word">serve</span> vegetarian options? <button onclick="playAudio('Does it serve vegetarian options?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele (o restaurante) serve opções vegetarianas?</span><code>/dʌz ɪt sɜːrv ˌvedʒəˈteriən ˈɑːpʃnz/</code><br><span class="character-portuguese-phonetics">(DÂZ ÊT SÃRV vé-djã-TÉ-ri-ãn ÓP-shãnz?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> we <span class="example-word">have</span> dinner together on Fridays? <button onclick="playAudio('Do we have dinner together on Fridays?')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós jantamos juntos às sextas?</span><code>/duː wiː hæv ˈdɪnər təˈɡeðər ɑːn ˈfraɪdeɪz/</code><br><span class="character-portuguese-phonetics">(DÚU UÍI RÉV DÊ-nãr tã-GUÉ-dhãr ón FRÁI-deiz?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> they <span class="example-word">cook</span> at home or eat out? <button onclick="playAudio('Do they cook at home or eat out?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles cozinham em casa ou comem fora?</span><code>/duː ðeɪ kʊk æt hoʊm ɔːr iːt aʊt/</code><br><span class="character-portuguese-phonetics">(DÚU DHÊI CÚK ét RÔUM ór ÍIT ÁUT?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> I <span class="example-word">add</span> too much pepper? <button onclick="playAudio('Do I add too much pepper?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu coloco pimenta demais?</span><code>/duː aɪ æd tuː mʌtʃ ˈpepər/</code><br><span class="character-portuguese-phonetics">(DÚU ÁI ÉD TÚU MÂTCH PÉ-pãr?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> you <span class="example-word">drink</span> water with your meals? <button onclick="playAudio('Do you drink water with your meals?')" class="audio-link">🔊</button></td><td><span class="translation-line">Você bebe água com suas refeições?</span><code>/duː juː drɪŋk ˈwɔːtər wɪð jɔːr miːlz/</code><br><span class="character-portuguese-phonetics">(DÚU IÚU DRÊNK UÓ-tãr uêDH iór MÍILZ?)</span></td></tr>
+                        <tr><td><span class="example-word">Does</span> he <span class="example-word">like</span> to eat fruit for breakfast? <button onclick="playAudio('Does he like to eat fruit for breakfast?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele gosta de comer fruta no café da manhã?</span><code>/dʌz hiː laɪk tu iːt fruːt fər ˈbrekfəst/</code><br><span class="character-portuguese-phonetics">(DÂZ RÍI LÁIK tu ÍIT FRÚUT fór BRÉK-fãst?)</span></td></tr>
+                        <tr><td><span class="example-word">Does</span> she <span class="example-word">order</span> food from this app? <button onclick="playAudio('Does she order food from this app?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela pede comida deste aplicativo?</span><code>/dʌz ʃiː ˈɔːrdər fuːd frəm ðɪs æp/</code><br><span class="character-portuguese-phonetics">(DÂZ XÍI ÓR-dãr FÚUD frãm DHÊS ÉP?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> we <span class="example-word">need</span> more bread for dinner? <button onclick="playAudio('Do we need more bread for dinner?')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós precisamos de mais pão para o jantar?</span><code>/duː wiː niːd mɔːr bred fər ˈdɪnər/</code><br><span class="character-portuguese-phonetics">(DÚU UÍI NÍID MÓR BRÉD fór DÊ-nãr?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> they <span class="example-word">usually eat</span> salad with lunch? <button onclick="playAudio('Do they usually eat salad with lunch?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles geralmente comem salada com o almoço?</span><code>/duː ðeɪ ˈjuːʒuəli iːt ˈsæləd wɪð lʌntʃ/</code><br><span class="character-portuguese-phonetics">(DÚU DHÊI IÚU-jua-li ÍIT SÉ-lãd uêDH LÂNTCH?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> you <span class="example-word">want</span> some cake for dessert? <button onclick="playAudio('Do you want some cake for dessert?')" class="audio-link">🔊</button></td><td><span class="translation-line">Você quer bolo de sobremesa?</span><code>/duː juː wɑːnt sʌm keɪk fər dɪˈzɜːrt/</code><br><span class="character-portuguese-phonetics">(DÚU IÚU UÓNT sãm KÊIK fór di-ZÃRT?)</span></td></tr>
+                        <tr><td><span class="example-word">Does</span> he <span class="example-word">prefer</span> chicken or fish? <button onclick="playAudio('Does he prefer chicken or fish?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele prefere frango ou peixe?</span><code>/dʌz hiː prɪˈfɜːr ˈtʃɪkɪn ɔːr fɪʃ/</code><br><span class="character-portuguese-phonetics">(DÂZ RÍI pri-FÃR TCHÊ-kãn ór FÊSH?)</span></td></tr>
+                        <tr><td><span class="example-word">Does</span> she <span class="example-word">cook</span> with fresh ingredients? <button onclick="playAudio('Does she cook with fresh ingredients?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela cozinha com ingredientes frescos?</span><code>/dʌz ʃiː kʊk wɪð freʃ ɪnˈɡriːdiənts/</code><br><span class="character-portuguese-phonetics">(DÂZ XÍI CÚK uêDH FRÉSH în-GRÍI-di-ãnts?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> we <span class="example-word">have</span> any snacks in the kitchen? <button onclick="playAudio('Do we have any snacks in the kitchen?')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós temos algum lanche na cozinha?</span><code>/duː wiː hæv ˈeni snæks ɪn ðə ˈkɪtʃɪn/</code><br><span class="character-portuguese-phonetics">(DÚU UÍI RÉV É-ni SNÉKS în dhã KÊ-tchãn?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> they <span class="example-word">like</span> to go to expensive restaurants? <button onclick="playAudio('Do they like to go to expensive restaurants?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles gostam de ir a restaurantes caros?</span><code>/duː ðeɪ laɪk tu ɪkˈspensɪv ˈrestrɑːnts/</code><br><span class="character-portuguese-phonetics">(DÚU DHÊI LÁIK tã GÔU tu ek-SPÉN-sêv RÉStronts?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> I <span class="example-word">eat</span> too much fast food? <button onclick="playAudio('Do I eat too much fast food?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu como muito fast food?</span><code>/duː aɪ iːt tuː mʌtʃ fæst fuːd/</code><br><span class="character-portuguese-phonetics">(DÚU ÁI ÍIT TÚU MÂTCH FÉST FÚUD?)</span></td></tr>
+                        <tr><td><span class="example-word">Do</span> you <span class="example-word">know</span> a good recipe for pasta? <button onclick="playAudio('Do you know a good recipe for pasta?')" class="audio-link">🔊</button></td><td><span class="translation-line">Você conhece uma boa receita de macarrão?</span><code>/duː juː noʊ ə ɡʊd ˈresəpi fər ˈpɑːstə/</code><br><span class="character-portuguese-phonetics">(DÚU IÚU NÔU ã GÚD RÉ-sã-pi fór PÁS-tã?)</span></td></tr>
                     </tbody>
                 </table>
             </div>
@@ -329,234 +272,52 @@
 
         <section id="respostas-curtas-do-does">
             <h3>6.4 Respostas Curtas com "Do/Don't" e "Does/Doesn't"</h3>
-            <p>Assim como com o verbo "To Be", usamos respostas curtas (<em>short answers</em>) para perguntas de "sim" ou "não" feitas com "Do" e "Does".</p>
-            <p><strong>Estrutura para Respostas Curtas Afirmativas:</strong> Yes, + pronome sujeito + do/does.</p>
-            <p><strong>Estrutura para Respostas Curtas Negativas:</strong> No, + pronome sujeito + don't/doesn't.</p>
+            <p>Assim como com o verbo "To Be", usamos respostas curtas (<em>short answers</em>) para perguntas de "sim" ou "não".</p>
             <ul class="no-bullets">
-                <li>Do you like vegetables?<br>
-                    <button onclick="playAudio('Do you like vegetables?')" class="audio-link audio-link-in-cell">🔊</button>
-                    <span class="ipa-phrase-block"><code>/duː juː laɪk ˈvedʒtəblz/</code> <span class="character-portuguese-phonetics">(DÚU IÚU LÁIK VÉDJ-tã-bõlz?)</span></span>
-                    <strong>Yes, I do.</strong><button onclick="playAudio('Yes, I do')" class="audio-link">🔊</button>
-                    <span class="ipa-phrase-block"><code>/jes aɪ duː/</code> <span class="character-portuguese-phonetics">(IÉS, ái DÚU)</span></span>
-                    <strong>No, I don't.</strong><button onclick="playAudio('No, I don\'t')" class="audio-link">🔊</button>
-                    <span class="ipa-phrase-block"><code>/noʊ aɪ doʊnt/</code> <span class="character-portuguese-phonetics">(NÔU, ái DÔUNT)</span></span>
+                <li>Do you like vegetables? <button onclick="playAudio('Do you like vegetables?')" class="audio-link">🔊</button>
+                    <br><strong>Yes, I do.</strong> <button onclick="playAudio('Yes, I do')" class="audio-link">🔊</button> / <strong>No, I don't.</strong> <button onclick="playAudio('No, I don\'t')" class="audio-link">🔊</button>
                 </li>
-                <br>
-                <li>Does he cook well?<br>
-                    <button onclick="playAudio('Does he cook well?')" class="audio-link audio-link-in-cell">🔊</button>
-                    <span class="ipa-phrase-block"><code>/dʌz hiː kʊk wel/</code> <span class="character-portuguese-phonetics">(DÂZ RÍI CÚK UÉL?)</span></span>
-                    <strong>Yes, he does.</strong><button onclick="playAudio('Yes, he does')" class="audio-link">🔊</button>
-                    <span class="ipa-phrase-block"><code>/jes hiː dʌz/</code> <span class="character-portuguese-phonetics">(IÉS, ríi DÂZ)</span></span>
-                    <strong>No, he doesn't.</strong><button onclick="playAudio('No, he doesn\'t')" class="audio-link">🔊</button>
-                    <span class="ipa-phrase-block"><code>/noʊ hiː ˈdʌznt/</code> <span class="character-portuguese-phonetics">(NÔU, ríi DÂ-zãnt)</span></span>
+                <li>Does he cook well? <button onclick="playAudio('Does he cook well?')" class="audio-link">🔊</button>
+                    <br><strong>Yes, he does.</strong> <button onclick="playAudio('Yes, he does')" class="audio-link">🔊</button> / <strong>No, he doesn't.</strong> <button onclick="playAudio('No, he doesn\'t')" class="audio-link">🔊</button>
                 </li>
-                <br>
-                <li>Do they eat fish?<br>
-                    <button onclick="playAudio('Do they eat fish?')" class="audio-link audio-link-in-cell">🔊</button>
-                    <span class="ipa-phrase-block"><code>/duː ðeɪ iːt fɪʃ/</code> <span class="character-portuguese-phonetics">(DÚU DHÊI ÍIT FÊSH?)</span></span>
-                    <strong>Yes, they do.</strong><button onclick="playAudio('Yes, they do')" class="audio-link">🔊</button>
-                    <span class="ipa-phrase-block"><code>/jes ðeɪ duː/</code> <span class="character-portuguese-phonetics">(IÉS, dhêi DÚU)</span></span>
-                    <strong>No, they don't.</strong><button onclick="playAudio('No, they don\'t')" class="audio-link">🔊</button>
-                    <span class="ipa-phrase-block"><code>/noʊ ðeɪ doʊnt/</code> <span class="character-portuguese-phonetics">(NÔU, dhêi DÔUNT)</span></span>
+                <li>Do they eat fish? <button onclick="playAudio('Do they eat fish?')" class="audio-link">🔊</button>
+                    <br><strong>Yes, they do.</strong> <button onclick="playAudio('Yes, they do')" class="audio-link">🔊</button> / <strong>No, they don't.</strong> <button onclick="playAudio('No, they don\'t')" class="audio-link">🔊</button>
                 </li>
             </ul>
         </section>
 
         <section id="vocabulario">
             <h3>Vocabulário da Aula: Preferências Alimentares e Rotinas de Refeições</h3>
-            <p>Vamos aprender algumas palavras úteis para falar sobre comida e refeições!</p>
             <div class="table-responsive-wrapper">
                 <table class="vocab-table">
                     <thead>
                         <tr>
-                            <th>Item (Português)</th>
-                            <th>Palavra em Inglês</th>
-                            <th>Pronúncia (IPA / Simplificada)</th>
-                            <th>Exemplo <br> <span style="font-size:0.8em; font-weight:normal;">(com Áudio 🔊, IPA e PT-BR da frase)</span></th>
-                            <th>Tradução (Exemplo/Frase)</th>
+                            <th style="width: 20%;">Item (PT)</th>
+                            <th style="width: 25%;">Inglês & Pronúncia</th>
+                            <th style="width: 55%;">Exemplo, Tradução & Áudio</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Café da manhã</td>
-                            <td><span class="example-word">Breakfast</span><br><button onclick="playAudio('Breakfast')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/ˈbrekfəst/</code><br><span class="character-portuguese-phonetics">(BRÉK-fãst)</span></td>
-                            <td>I eat eggs for breakfast. <button onclick="playAudio('I eat eggs for breakfast')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/aɪ iːt eɡz fər ˈbrekfəst/</code><br><span class="character-portuguese-phonetics">(ÁI ÍIT ÉGZ fór BRÉK-fãst)</span></span>
-                            </td>
-                            <td>Eu como ovos no café da manhã.</td>
-                        </tr>
-                        <tr>
-                            <td>Almoço</td>
-                            <td><span class="example-word">Lunch</span><br><button onclick="playAudio('Lunch')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/lʌntʃ/</code><br><span class="character-portuguese-phonetics">(LÂNTCH)</span></td>
-                            <td>What do you have for lunch? <button onclick="playAudio('What do you have for lunch?')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/wʌt duː juː hæv fər lʌntʃ/</code><br><span class="character-portuguese-phonetics">(UÓT DÚU iúu RÉV fór LÂNTCH?)</span></span>
-                            </td>
-                            <td>O que você come no almoço?</td>
-                        </tr>
-                        <tr>
-                            <td>Jantar</td>
-                            <td><span class="example-word">Dinner</span><br><button onclick="playAudio('Dinner')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/ˈdɪnər/</code><br><span class="character-portuguese-phonetics">(DÊ-nãr)</span></td>
-                            <td>She cooks dinner for her family. <button onclick="playAudio('She cooks dinner for her family')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/ʃiː kʊks ˈdɪnər fər hər ˈfæməli/</code><br><span class="character-portuguese-phonetics">(XÍI CÚKS DÊ-nãr fór rãr FÉ-mã-li)</span></span>
-                            </td>
-                            <td>Ela cozinha o jantar para a família dela.</td>
-                        </tr>
-                        <tr>
-                            <td>Comer</td>
-                            <td><span class="example-word">Eat</span><br><button onclick="playAudio('Eat')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/iːt/</code><br><span class="character-portuguese-phonetics">(ÍIT)</span></td>
-                            <td>They eat a lot of vegetables. <button onclick="playAudio('They eat a lot of vegetables')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/ðeɪ iːt ə lɑːt əv ˈvedʒtəblz/</code><br><span class="character-portuguese-phonetics">(DHÊI ÍIT ã LÓT óv VÉDJ-tã-bõlz)</span></span>
-                            </td>
-                            <td>Eles comem muitos vegetais.</td>
-                        </tr>
-                        <tr>
-                            <td>Beber</td>
-                            <td><span class="example-word">Drink</span><br><button onclick="playAudio('Drink')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/drɪŋk/</code><br><span class="character-portuguese-phonetics">(DRÊNK)</span></td>
-                            <td>I drink coffee every morning. <button onclick="playAudio('I drink coffee every morning')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/aɪ drɪŋk ˈkɔːfi ˈevri ˈmɔːrnɪŋ/</code><br><span class="character-portuguese-phonetics">(ÁI DRÊNK CÓ-fi É-vri MÓR-nin)</span></span>
-                            </td>
-                            <td>Eu bebo café toda manhã.</td>
-                        </tr>
-                        <tr>
-                            <td>Gostar</td>
-                            <td><span class="example-word">Like</span><br><button onclick="playAudio('Like')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/laɪk/</code><br><span class="character-portuguese-phonetics">(LÁIK)</span></td>
-                            <td>Do you like pasta? <button onclick="playAudio('Do you like pasta?')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/duː juː laɪk ˈpɑːstə/</code><br><span class="character-portuguese-phonetics">(DÚU IÚU LÁIK PÁS-tã?)</span></span>
-                            </td>
-                            <td>Você gosta de macarrão?</td>
-                        </tr>
-                        <tr>
-                            <td>Preferir</td>
-                            <td><span class="example-word">Prefer</span><br><button onclick="playAudio('Prefer')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/prɪˈfɜːr/</code><br><span class="character-portuguese-phonetics">(pri-FÃR)</span></td>
-                            <td>He prefers tea to coffee. <button onclick="playAudio('He prefers tea to coffee')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/hiː prɪˈfɜːrz tiː tə ˈkɔːfi/</code><br><span class="character-portuguese-phonetics">(RÍI pri-FÃRZ TÍI tã CÓ-fi)</span></span>
-                            </td>
-                            <td>Ele prefere chá a café.</td>
-                        </tr>
-                        <tr>
-                            <td>Cozinhar (verbo)</td>
-                            <td><span class="example-word">Cook</span><br><button onclick="playAudio('Cook')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/kʊk/</code><br><span class="character-portuguese-phonetics">(CÚK)</span></td>
-                            <td>My mother cooks very well. <button onclick="playAudio('My mother cooks very well')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/maɪ ˈmʌðər kʊks ˈveri wel/</code><br><span class="character-portuguese-phonetics">(MÁI MÂ-dhãr CÚKS VÉ-ri UÉL)</span></span>
-                            </td>
-                            <td>Minha mãe cozinha muito bem.</td>
-                        </tr>
-                        <tr>
-                            <td>Fruta</td>
-                            <td><span class="example-word">Fruit</span><br><button onclick="playAudio('Fruit')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/fruːt/</code><br><span class="character-portuguese-phonetics">(FRÚUT)</span></td>
-                            <td>I eat fruit every day. <button onclick="playAudio('I eat fruit every day')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/aɪ iːt fruːt ˈevri deɪ/</code><br><span class="character-portuguese-phonetics">(ÁI ÍIT FRÚUT É-vri DÊI)</span></span>
-                            </td>
-                            <td>Eu como fruta todos os dias.</td>
-                        </tr>
-                        <tr>
-                            <td>Vegetais / Legumes</td>
-                            <td><span class="example-word">Vegetables</span><br><button onclick="playAudio('Vegetables')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/ˈvedʒtəblz/</code><br><span class="character-portuguese-phonetics">(VÉDJ-tã-bõlz)</span></td>
-                            <td>She doesn't like all vegetables. <button onclick="playAudio('She doesn\'t like all vegetables')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/ʃiː ˈdʌznt laɪk ɔːl ˈvedʒtəblz/</code><br><span class="character-portuguese-phonetics">(XÍI DÂ-zãnt LÁIK ÓL VÉDJ-tã-bõlz)</span></span>
-                            </td>
-                            <td>Ela não gosta de todos os vegetais/legumes.</td>
-                        </tr>
-                        <tr>
-                            <td>Pão</td>
-                            <td><span class="example-word">Bread</span><br><button onclick="playAudio('Bread')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/bred/</code><br><span class="character-portuguese-phonetics">(BRÉD)</span></td>
-                            <td>Do you want some bread? <button onclick="playAudio('Do you want some bread?')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/duː juː wɑːnt sʌm bred/</code><br><span class="character-portuguese-phonetics">(DÚU IÚU UÓNT sãm BRÉD?)</span></span>
-                            </td>
-                            <td>Você quer pão?</td>
-                        </tr>
-                        <tr>
-                            <td>Restaurante</td>
-                            <td><span class="example-word">Restaurant</span><br><button onclick="playAudio('Restaurant')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/ˈrestrɑːnt/</code><br><span class="character-portuguese-phonetics">(RÉS-tront)</span></td>
-                            <td>This restaurant serves good food. <button onclick="playAudio('This restaurant serves good food')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/ðɪs ˈrestrɑːnt sɜːrvz ɡʊd fuːd/</code><br><span class="character-portuguese-phonetics">(DHÊS RÉStront SÃRVZ GÚD FÚUD)</span></span>
-                            </td>
-                            <td>Este restaurante serve comida boa.</td>
-                        </tr>
-                        <tr>
-                            <td>Cozinha</td>
-                            <td><span class="example-word">Kitchen</span><br><button onclick="playAudio('Kitchen')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/ˈkɪtʃɪn/</code><br><span class="character-portuguese-phonetics">(KÊ-tchãn)</span></td>
-                            <td>My mother is in the kitchen. <button onclick="playAudio('My mother is in the kitchen')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/maɪ ˈmʌðər ɪz ɪn ðə ˈkɪtʃɪn/</code><br><span class="character-portuguese-phonetics">(MÁI MÂ-dhãr ÊZ în dhã KÊ-tchãn)</span></span>
-                            </td>
-                            <td>Minha mãe está na cozinha.</td>
-                        </tr>
-                        <tr>
-                            <td>Garfo</td>
-                            <td><span class="example-word">Fork</span><br><button onclick="playAudio('Fork')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/fɔːrk/</code><br><span class="character-portuguese-phonetics">(FÓRK)</span></td>
-                            <td>I need a fork, please. <button onclick="playAudio('I need a fork, please.')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/aɪ niːd ə fɔːrk pliːz/</code><br><span class="character-portuguese-phonetics">(ÁI NÍID ã FÓRK, PLÍIZ)</span></span>
-                            </td>
-                            <td>Eu preciso de um garfo, por favor.</td>
-                        </tr>
-                        <tr>
-                            <td>Faca</td>
-                            <td><span class="example-word">Knife</span><br><button onclick="playAudio('Knife')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/naɪf/</code><br><span class="character-portuguese-phonetics">(NÁIF)</span></td>
-                            <td>Be careful with the knife. <button onclick="playAudio('Be careful with the knife')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/biː ˈkerfl wɪð ðə naɪf/</code><br><span class="character-portuguese-phonetics">(BÍI KÉR-fõl uêDH dhã NÁIF)</span></span>
-                            </td>
-                            <td>Cuidado com a faca.</td>
-                        </tr>
-                         <tr>
-                            <td>Colher</td>
-                            <td><span class="example-word">Spoon</span><br><button onclick="playAudio('Spoon')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/spuːn/</code><br><span class="character-portuguese-phonetics">(SPÚUN)</span></td>
-                            <td>He eats soup with a spoon. <button onclick="playAudio('He eats soup with a spoon')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/hiː iːts suːp wɪð ə spuːn/</code><br><span class="character-portuguese-phonetics">(RÍI ÍITS SÚUP uêDH ã SPÚUN)</span></span>
-                            </td>
-                            <td>Ele toma sopa com uma colher.</td>
-                        </tr>
-                         <tr>
-                            <td>Prato</td>
-                            <td><span class="example-word">Plate</span><br><button onclick="playAudio('Plate')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/pleɪt/</code><br><span class="character-portuguese-phonetics">(PLÊIT)</span></td>
-                            <td>My plate is full. <button onclick="playAudio('My plate is full')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/maɪ pleɪt ɪz fʊl/</code><br><span class="character-portuguese-phonetics">(MÁI PLÊIT êz FÚL)</span></span>
-                            </td>
-                            <td>Meu prato está cheio.</td>
-                        </tr>
-                         <tr>
-                            <td>Saudável</td>
-                            <td><span class="example-word">Healthy</span><br><button onclick="playAudio('Healthy')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/ˈhelθi/</code><br><span class="character-portuguese-phonetics">(RÉL-fi)</span></td>
-                            <td>I try to eat healthy food. <button onclick="playAudio('I try to eat healthy food')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/aɪ traɪ tu iːt ˈhelθi fuːd/</code><br><span class="character-portuguese-phonetics">(ÁI TRÁI tu ÍIT RÉL-fi FÚUD)</span></span>
-                            </td>
-                            <td>Eu tento comer comida saudável.</td>
-                        </tr>
-                         <tr>
-                            <td>Saboroso</td>
-                            <td><span class="example-word">Tasty</span><br><button onclick="playAudio('Tasty')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/ˈteɪsti/</code><br><span class="character-portuguese-phonetics">(TÊIS-ti)</span></td>
-                            <td>This meal is very tasty. <button onclick="playAudio('This meal is very tasty')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/ðɪs miːl ɪz ˈveri ˈteɪsti/</code><br><span class="character-portuguese-phonetics">(DHÊS MÍIL êz VÉ-ri TÊIS-ti)</span></span>
-                            </td>
-                            <td>Esta refeição é muito saborosa.</td>
-                        </tr>
-                         <tr>
-                            <td>Sobremesa</td>
-                            <td><span class="example-word">Dessert</span><br><button onclick="playAudio('Dessert')" class="audio-link audio-link-in-cell">🔊</button></td>
-                            <td><code>/dɪˈzɜːrt/</code><br><span class="character-portuguese-phonetics">(di-ZÃRT)</span></td>
-                            <td>Do you want dessert? <button onclick="playAudio('Do you want dessert?')" class="audio-link audio-link-in-cell">🔊</button>
-                                <span class="ipa-phrase-block"><code>/duː juː wɑːnt dɪˈzɜːrt/</code><br><span class="character-portuguese-phonetics">(DÚU iúu UÓNT di-ZÃRT?)</span></span>
-                            </td>
-                            <td>Você quer sobremesa?</td>
-                        </tr>
+                        <tr><td>Café da manhã</td><td><span class="example-word">Breakfast</span><br><code>/ˈbrekfəst/</code><br><span class="character-portuguese-phonetics">(BRÉK-fãst)</span></td><td>I eat eggs for breakfast. <button onclick="playAudio('I eat eggs for breakfast')" class="audio-link">🔊</button><br><span class="translation-line">Eu como ovos no café da manhã.</span></td></tr>
+                        <tr><td>Almoço</td><td><span class="example-word">Lunch</span><br><code>/lʌntʃ/</code><br><span class="character-portuguese-phonetics">(LÂNTCH)</span></td><td>What do you have for lunch? <button onclick="playAudio('What do you have for lunch?')" class="audio-link">🔊</button><br><span class="translation-line">O que você come no almoço?</span></td></tr>
+                        <tr><td>Jantar</td><td><span class="example-word">Dinner</span><br><code>/ˈdɪnər/</code><br><span class="character-portuguese-phonetics">(DÊ-nãr)</span></td><td>She cooks dinner. <button onclick="playAudio('She cooks dinner')" class="audio-link">🔊</button><br><span class="translation-line">Ela cozinha o jantar.</span></td></tr>
+                        <tr><td>Comer</td><td><span class="example-word">Eat</span><br><code>/iːt/</code><br><span class="character-portuguese-phonetics">(ÍIT)</span></td><td>They eat vegetables. <button onclick="playAudio('They eat vegetables')" class="audio-link">🔊</button><br><span class="translation-line">Eles comem vegetais.</span></td></tr>
+                        <tr><td>Beber</td><td><span class="example-word">Drink</span><br><code>/drɪŋk/</code><br><span class="character-portuguese-phonetics">(DRÊNK)</span></td><td>I drink coffee. <button onclick="playAudio('I drink coffee')" class="audio-link">🔊</button><br><span class="translation-line">Eu bebo café.</span></td></tr>
+                        <tr><td>Gostar</td><td><span class="example-word">Like</span><br><code>/laɪk/</code><br><span class="character-portuguese-phonetics">(LÁIK)</span></td><td>Do you like pasta? <button onclick="playAudio('Do you like pasta?')" class="audio-link">🔊</button><br><span class="translation-line">Você gosta de macarrão?</span></td></tr>
+                        <tr><td>Preferir</td><td><span class="example-word">Prefer</span><br><code>/prɪˈfɜːr/</code><br><span class="character-portuguese-phonetics">(pri-FÃR)</span></td><td>He prefers tea. <button onclick="playAudio('He prefers tea')" class="audio-link">🔊</button><br><span class="translation-line">Ele prefere chá.</span></td></tr>
+                        <tr><td>Cozinhar</td><td><span class="example-word">Cook</span><br><code>/kʊk/</code><br><span class="character-portuguese-phonetics">(CÚK)</span></td><td>My mother cooks well. <button onclick="playAudio('My mother cooks well')" class="audio-link">🔊</button><br><span class="translation-line">Minha mãe cozinha bem.</span></td></tr>
+                        <tr><td>Fruta</td><td><span class="example-word">Fruit</span><br><code>/fruːt/</code><br><span class="character-portuguese-phonetics">(FRÚUT)</span></td><td>I eat fruit daily. <button onclick="playAudio('I eat fruit daily')" class="audio-link">🔊</button><br><span class="translation-line">Eu como fruta diariamente.</span></td></tr>
+                        <tr><td>Vegetais</td><td><span class="example-word">Vegetables</span><br><code>/ˈvedʒtəblz/</code><br><span class="character-portuguese-phonetics">(VÉDJ-tã-bõlz)</span></td><td>She likes vegetables. <button onclick="playAudio('She likes vegetables')" class="audio-link">🔊</button><br><span class="translation-line">Ela gosta de vegetais.</span></td></tr>
+                        <tr><td>Pão</td><td><span class="example-word">Bread</span><br><code>/bred/</code><br><span class="character-portuguese-phonetics">(BRÉD)</span></td><td>Do you want bread? <button onclick="playAudio('Do you want bread?')" class="audio-link">🔊</button><br><span class="translation-line">Você quer pão?</span></td></tr>
+                        <tr><td>Restaurante</td><td><span class="example-word">Restaurant</span><br><code>/ˈrestrɑːnt/</code><br><span class="character-portuguese-phonetics">(RÉS-tront)</span></td><td>This restaurant is good. <button onclick="playAudio('This restaurant is good')" class="audio-link">🔊</button><br><span class="translation-line">Este restaurante é bom.</span></td></tr>
+                        <tr><td>Cozinha</td><td><span class="example-word">Kitchen</span><br><code>/ˈkɪtʃɪn/</code><br><span class="character-portuguese-phonetics">(KÊ-tchãn)</span></td><td>She is in the kitchen. <button onclick="playAudio('She is in the kitchen')" class="audio-link">🔊</button><br><span class="translation-line">Ela está na cozinha.</span></td></tr>
+                        <tr><td>Garfo</td><td><span class="example-word">Fork</span><br><code>/fɔːrk/</code><br><span class="character-portuguese-phonetics">(FÓRK)</span></td><td>I need a fork. <button onclick="playAudio('I need a fork')" class="audio-link">🔊</button><br><span class="translation-line">Eu preciso de um garfo.</span></td></tr>
+                        <tr><td>Faca</td><td><span class="example-word">Knife</span><br><code>/naɪf/</code><br><span class="character-portuguese-phonetics">(NÁIF)</span></td><td>Be careful with the knife. <button onclick="playAudio('Be careful with the knife')" class="audio-link">🔊</button><br><span class="translation-line">Cuidado com a faca.</span></td></tr>
+                        <tr><td>Colher</td><td><span class="example-word">Spoon</span><br><code>/spuːn/</code><br><span class="character-portuguese-phonetics">(SPÚUN)</span></td><td>He uses a spoon. <button onclick="playAudio('He uses a spoon')" class="audio-link">🔊</button><br><span class="translation-line">Ele usa uma colher.</span></td></tr>
+                        <tr><td>Prato</td><td><span class="example-word">Plate</span><br><code>/pleɪt/</code><br><span class="character-portuguese-phonetics">(PLÊIT)</span></td><td>My plate is full. <button onclick="playAudio('My plate is full')" class="audio-link">🔊</button><br><span class="translation-line">Meu prato está cheio.</span></td></tr>
+                        <tr><td>Saudável</td><td><span class="example-word">Healthy</span><br><code>/ˈhelθi/</code><br><span class="character-portuguese-phonetics">(RÉL-fi)</span></td><td>I eat healthy food. <button onclick="playAudio('I eat healthy food')" class="audio-link">🔊</button><br><span class="translation-line">Eu como comida saudável.</span></td></tr>
+                        <tr><td>Saboroso</td><td><span class="example-word">Tasty</span><br><code>/ˈteɪsti/</code><br><span class="character-portuguese-phonetics">(TÊIS-ti)</span></td><td>This meal is tasty. <button onclick="playAudio('This meal is tasty')" class="audio-link">🔊</button><br><span class="translation-line">Esta refeição é saborosa.</span></td></tr>
+                        <tr><td>Sobremesa</td><td><span class="example-word">Dessert</span><br><code>/dɪˈzɜːrt/</code><br><span class="character-portuguese-phonetics">(di-ZÃRT)</span></td><td>Do you want dessert? <button onclick="playAudio('Do you want dessert?')" class="audio-link">🔊</button><br><span class="translation-line">Você quer sobremesa?</span></td></tr>
                     </tbody>
                 </table>
             </div>
@@ -593,15 +354,13 @@
                 
                 <h4>Quiz</h4>
                 <p>According to the text, what is a primary reason for the difference in lunch habits between Mediterranean countries and North America?</p>
-                <ol type="A" style="padding-left: 20px;">
-                    <li style="margin-bottom: 5px;">People in North America don't like big meals.</li>
-                    <li style="margin-bottom: 5px;">Mediterranean countries have more restaurants for lunch.</li>
-                    <li style="margin-bottom: 5px;">The time of day when the main meal is traditionally eaten.</li>
-                    <li style="margin-bottom: 5px;">People in Mediterranean countries don't eat breakfast.</li>
-                    <li style="margin-bottom: 5px;">North Americans prefer to cook dinner instead of lunch.</li>
-                </ol>
-
-                <p><strong>Gabarito:</strong> <span class="hidden-answer" title="Clique para revelar">otseuqseR a :C</span></p>
+                <ul class="quiz-options">
+                    <li>A) People in North America don't like big meals.</li>
+                    <li>B) Mediterranean countries have more restaurants for lunch.</li>
+                    <li>C) The time of day when the main meal is traditionally eaten.</li>
+                    <li>D) People in Mediterranean countries don't eat breakfast.</li>
+                    <li>E) North Americans prefer to cook dinner instead of lunch.</li>
+                </ul>
             </div>
         </section>
 
@@ -610,12 +369,12 @@
             <div class="nota-gramatical" style="border-left-color: #27ae60; background-color: #e6f7ef;">
                 <h4 style="color:#27ae60;">Dicas para Dominar o Presente Simples (Negativas e Interrogativas):</h4>
                 <ul class="exercise-list" style="list-style-type: disc;">
-                    <li><strong>Pratique Diariamente:</strong> Forme frases negativas e interrogativas sobre sua rotina alimentar e a de seus amigos/familiares.</li>
-                    <li><strong>Respostas Curtas:</strong> Ao assistir diálogos em inglês, observe como as pessoas usam respostas curtas com "do/don't" e "does/doesn't". Tente usá-las também.</li>
-                    <li><strong>Crie Mini-Diálogos:</strong> Escreva pequenos diálogos perguntando sobre preferências alimentares e responda. Ex: "Do you like broccoli?" "No, I don't. But I like carrots."</li>
-                    <li><strong>Use Flashcards:</strong> Crie cartões com perguntas de um lado (Ex: "he / like / fish?") e a resposta correta do outro (Ex: "Does he like fish?").</li>
-                    <li><strong>Grave-se:</strong> Faça perguntas em voz alta e responda. Depois ouça para verificar sua pronúncia e a estrutura das frases.</li>
-                    <li><strong>Atenção ao Verbo Principal:</strong> Lembre-se sempre que, ao usar "do/don't" ou "does/doesn't", o verbo principal volta para a forma base (sem "-s").</li>
+                    <li><strong>Pratique Diariamente:</strong> Forme frases negativas e interrogativas sobre sua rotina alimentar.</li>
+                    <li><strong>Respostas Curtas:</strong> Use respostas curtas com "do/don't" e "does/doesn't" em conversas.</li>
+                    <li><strong>Crie Mini-Diálogos:</strong> Escreva diálogos simples perguntando sobre preferências alimentares.</li>
+                    <li><strong>Use Flashcards:</strong> Crie cartões com perguntas de um lado e respostas do outro.</li>
+                    <li><strong>Grave-se:</strong> Faça perguntas em voz alta e responda para praticar a pronúncia.</li>
+                    <li><strong>Atenção ao Verbo Principal:</strong> Lembre-se que o verbo principal volta para a forma base ao usar auxiliares.</li>
                 </ul>
             </div>
         </section>
@@ -663,6 +422,7 @@
         <section id="gabarito-aula">
             <div class="secao-gabarito">
                 <h4>Gabarito das Questões</h4>
+                <p><strong>Tarefa Extra (Quiz):</strong> A resposta correta é a letra <strong>C) The time of day when the main meal is traditionally eaten.</strong></p>
                 <p><strong>Parte 1: Negativas e Interrogativas</strong></p>
                 <ol>
                     <li>Negativa: I don't like orange juice. | Interrogativa: Do you like orange juice?</li>
@@ -698,18 +458,57 @@
     </div>
 
     <script>
+        // Lógica de carregamento de vozes para compatibilidade mobile (Android/iOS)
+        let voices = [];
+        
+        function loadVoices() {
+            // Obtém a lista de vozes disponíveis no sistema
+            voices = window.speechSynthesis.getVoices();
+        }
+
+        // O evento onvoiceschanged é disparado quando a lista de vozes é carregada/alterada
+        if (window.speechSynthesis.onvoiceschanged !== undefined) {
+            window.speechSynthesis.onvoiceschanged = loadVoices;
+        }
+        
+        // Chamada inicial para tentar carregar vozes imediatamente
+        loadVoices();
+
         function playAudio(text) {
             if ('speechSynthesis' in window) {
-                // Cancela áudios anteriores para não sobrepor
+                // Interrompe qualquer fala em andamento para não sobrepor
                 window.speechSynthesis.cancel();
                 
                 const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = 'en-US';
-                utterance.rate = 0.9; // Velocidade um pouco mais lenta para facilitar a compreensão
+                utterance.rate = 0.85; // Velocidade um pouco mais lenta para didática
+                utterance.lang = 'en-US'; // Define o idioma base como fallback
+
+                // ESTRATÉGIA DE SELEÇÃO DE VOZ PARA MOBILE:
+                // 1. Tenta encontrar uma voz específica 'en-US' (Inglês Americano).
+                // 2. No Android, muitas vezes a voz se chama "Google US English" ou similar.
+                // 3. Se não achar US, tenta qualquer voz que comece com 'en' (Inglês Geral/Britânico).
                 
+                // Primeiro, garanta que temos vozes carregadas (caso o evento não tenha disparado antes)
+                if (voices.length === 0) {
+                    voices = window.speechSynthesis.getVoices();
+                }
+
+                const englishVoice = voices.find(voice => 
+                    voice.lang === 'en-US' && !voice.localService // Tenta priorizar vozes de alta qualidade (rede) se disponível, mas nem sempre funciona
+                ) || voices.find(voice => 
+                    voice.lang === 'en-US'
+                ) || voices.find(voice => 
+                    voice.lang.startsWith('en')
+                );
+
+                // Se encontrou uma voz compatível, atribui explicitamente
+                if (englishVoice) {
+                    utterance.voice = englishVoice;
+                }
+
                 window.speechSynthesis.speak(utterance);
             } else {
-                alert("Desculpe, seu navegador não suporta a tecnologia de reprodução de áudio.");
+                alert("Seu navegador não suporta a tecnologia de áudio. Tente usar o Chrome ou Safari atualizado.");
             }
         }
     </script>
